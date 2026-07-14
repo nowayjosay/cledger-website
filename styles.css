@@ -885,78 +885,89 @@ img {
    HOME: SECTION 2 — FEATURES (white: #FFFFFF)
    ============================================ */
 .features-section {
-  padding: 100px 0;
+  padding: 80px 0;
   background-color: var(--white);
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
 }
 
-.features-section .section-header {
-  margin-bottom: 56px;
-}
-
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.feature-card {
+/* Single unified card */
+.features-card {
   background-color: var(--white);
   border: 1.5px solid var(--border);
   border-radius: var(--radius-card);
-  padding: 28px 24px;
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+}
+
+.features-card-header {
+  text-align: center;
+  padding: 40px 40px 36px;
+}
+
+.features-card-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+}
+
+.features-title-bar {
+  display: block;
+  width: 40px;
+  height: 3px;
+  background-color: var(--green);
+  border-radius: 2px;
+  margin: 0 auto;
+}
+
+/* Horizontal strip of 6 features */
+.features-strip {
+  display: flex;
+  border-top: 1px solid var(--border);
+}
+
+.feature-item {
+  flex: 1;
+  padding: 36px 16px 40px;
   display: flex;
   flex-direction: column;
-  gap: 14px;
-  box-shadow: var(--shadow-card);
-  transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
-  opacity: 0;
-  transform: translateY(20px);
+  align-items: center;
+  text-align: center;
+  border-right: 1px solid var(--border);
+  transition: background-color var(--transition);
 }
 
-.feature-card.is-visible {
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.5s ease, transform 0.5s ease,
-              border-color 0.22s ease, box-shadow 0.22s ease;
+.feature-item:last-child {
+  border-right: none;
 }
 
-.feature-card:hover {
-  border-color: rgba(37, 99, 235, 0.3);
-  box-shadow: 0px 12px 40px rgba(15, 23, 42, 0.12);
-  transform: translateY(-3px);
+.feature-item:hover {
+  background-color: rgba(16, 185, 129, 0.025);
 }
 
-.feature-icon-wrap {
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
+.feature-item-icon {
+  color: var(--green);
+  margin-bottom: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
-  color: var(--green);
 }
 
-.feature-icon-wrap--blue,
-.feature-icon-wrap--green {
-  background-color: rgba(16, 185, 129, 0.08);
-  border: 1px solid rgba(16, 185, 129, 0.18);
-  color: var(--green);
-}
-
-.feature-title {
-  font-size: 16px;
+.feature-item-title {
+  font-size: 14px;
   font-weight: 700;
   color: var(--text-primary);
+  margin-bottom: 8px;
   letter-spacing: -0.01em;
 }
 
-.feature-desc {
-  font-size: 14px;
-  line-height: 1.65;
+.feature-item-desc {
+  font-size: 13px;
+  line-height: 1.55;
   color: var(--text-secondary);
+  max-width: 130px;
 }
 
 /* ============================================
@@ -1462,6 +1473,30 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  /* Features strip: wrap to 3 per row on tablet */
+  .features-strip {
+    flex-wrap: wrap;
+  }
+
+  .feature-item {
+    flex: 0 0 33.333%;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .feature-item:nth-child(3) {
+    border-right: none;
+  }
+
+  .feature-item:nth-child(4),
+  .feature-item:nth-child(5),
+  .feature-item:nth-child(6) {
+    border-bottom: none;
+  }
+
+  .feature-item:nth-child(6) {
+    border-right: none;
+  }
+
   .privacy-grid {
     gap: 48px;
   }
@@ -1605,6 +1640,33 @@ img {
 
   .features-grid {
     grid-template-columns: 1fr;
+  }
+
+  /* Features strip: 2 per row on mobile */
+  .features-strip {
+    flex-wrap: wrap;
+  }
+
+  .features-card-header {
+    padding: 28px 20px 24px;
+  }
+
+  .features-card-title {
+    font-size: 20px;
+  }
+
+  .feature-item {
+    flex: 0 0 50%;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .feature-item:nth-child(2n) {
+    border-right: none;
+  }
+
+  .feature-item:nth-child(5),
+  .feature-item:nth-child(6) {
+    border-bottom: none;
   }
 
   .privacy-section {
