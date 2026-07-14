@@ -697,14 +697,11 @@ img {
 .features-section {
   padding: 80px 0;
   background-color: var(--white);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
 }
 
 /* Single unified card */
 .features-card {
   background-color: var(--white);
-  border: 1.5px solid var(--border);
   border-radius: var(--radius-card);
   box-shadow: var(--shadow-card);
   overflow: hidden;
@@ -735,7 +732,6 @@ img {
 /* Horizontal strip of 6 features */
 .features-strip {
   display: flex;
-  border-top: 1px solid var(--border);
 }
 
 .feature-item {
@@ -758,7 +754,7 @@ img {
 }
 
 .feature-item-icon {
-  color: var(--green);
+  color: #60A5FA;
   margin-bottom: 18px;
   display: flex;
   align-items: center;
