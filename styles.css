@@ -721,7 +721,7 @@ img {
   display: block;
   width: 40px;
   height: 3px;
-  background-color: var(--green);
+  background-color: #60A5FA;
   border-radius: 2px;
   margin: 0 auto;
 }
