@@ -687,36 +687,28 @@ img {
   align-items: center;
   overflow: hidden;
   padding: 80px 0 100px;
-  background: linear-gradient(160deg, #FFFFFF 0%, #F8FAFC 100%);
+  background-image: url('assets/images/Portrait_Page_Orientation_20260714_145950_0000.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
-/* Subtle blue tint in top-left corner */
-.hero-bg-glow {
+/* Dark gradient overlay — heavier on the left (text side), lighter right */
+.hero-bg-overlay {
   position: absolute;
-  border-radius: 50%;
-  filter: blur(100px);
-  pointer-events: none;
-}
-
-.hero-bg-glow--blue {
-  width: 640px;
-  height: 640px;
-  background: radial-gradient(circle, rgba(37, 99, 235, 0.07), transparent 70%);
-  top: -160px;
-  left: -120px;
-}
-
-.hero-bg-glow--green {
-  width: 480px;
-  height: 480px;
-  background: radial-gradient(circle, rgba(16, 185, 129, 0.05), transparent 70%);
-  bottom: -60px;
-  right: 5%;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(5, 12, 22, 0.74) 0%,
+    rgba(5, 12, 22, 0.52) 45%,
+    rgba(5, 12, 22, 0.22) 100%
+  );
+  z-index: 0;
 }
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 30% 50% 20%;
+  grid-template-columns: 44% 56%;
   align-items: center;
   gap: 32px;
   position: relative;
@@ -735,11 +727,11 @@ img {
   font-weight: 800;
   line-height: 1.16;
   letter-spacing: -0.03em;
-  color: var(--text-primary);
+  color: #FFFFFF;
 }
 
 .hero-headline-accent {
-  background: linear-gradient(90deg, var(--blue), var(--green));
+  background: linear-gradient(90deg, #60A5FA, var(--green));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -748,7 +740,7 @@ img {
 .hero-description {
   font-size: 15px;
   line-height: 1.7;
-  color: var(--text-secondary);
+  color: rgba(255, 255, 255, 0.78);
   max-width: 320px;
 }
 
@@ -760,125 +752,26 @@ img {
   margin-top: 4px;
 }
 
-/* Center column — device stage */
+/* Section tag variant for use on dark/image backgrounds */
+.section-tag--light {
+  background-color: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.28);
+  color: rgba(255, 255, 255, 0.90);
+}
+
+/* Badge placeholder variant for dark backgrounds */
+.badge-placeholder--light {
+  background-color: rgba(255, 255, 255, 0.10);
+  border-color: rgba(255, 255, 255, 0.25);
+  color: rgba(255, 255, 255, 0.80);
+}
+
+/* Right column — empty zone reserved for device mockups */
 .hero-center {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.device-stage {
-  position: relative;
-  width: 100%;
-  max-width: 440px;
-  height: 460px;
-}
-
-.device-tablet {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 60px;
-  bottom: 60px;
-  background: linear-gradient(145deg, #FFFFFF, #F8FAFC);
-  border: 1.5px solid var(--border);
-  border-radius: var(--radius-device);
-  box-shadow: var(--shadow-device);
-  transform: rotate(-2deg);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 14px 16px 16px;
-  overflow: hidden;
-}
-
-.device-phone {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 160px;
-  top: 80px;
-  background: linear-gradient(145deg, #FFFFFF, #F8FAFC);
-  border: 1.5px solid var(--border);
-  border-radius: var(--radius-device);
-  box-shadow: var(--shadow-device);
-  transform: rotate(2deg);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 14px 12px 16px;
-  overflow: hidden;
-}
-
-.device-notch {
-  width: 60px;
-  height: 5px;
-  background-color: var(--border);
-  border-radius: 10px;
-  margin-bottom: 10px;
-  flex-shrink: 0;
-}
-
-.device-notch--small {
-  width: 36px;
-}
-
-.device-screen {
-  flex: 1;
-  width: 100%;
-  background-color: var(--light);
-  border: 1.5px dashed var(--border-mid);
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: placeholder-pulse 2.8s ease-in-out infinite;
-}
-
-.device-screen .placeholder-label {
-  font-size: 9px;
-  color: var(--border-mid);
-}
-
-@keyframes float-tablet {
-  0%, 100% { transform: rotate(-2deg) translateY(0); }
-  50%       { transform: rotate(-2deg) translateY(-8px); }
-}
-
-@keyframes float-phone {
-  0%, 100% { transform: rotate(2deg) translateY(0); }
-  50%       { transform: rotate(2deg) translateY(-12px); }
-}
-
-.device-tablet { animation: float-tablet 5s ease-in-out infinite; }
-.device-phone  { animation: float-phone  5s ease-in-out infinite 0.8s; }
-
-/* Right column — offshore scene */
-.hero-right {
-  display: flex;
-  align-items: stretch;
-  height: 460px;
-}
-
-.hero-scene-placeholder {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(180deg, var(--light) 0%, #EBF0F6 100%);
-  border: 1.5px dashed var(--border-mid);
-  border-radius: var(--radius-img);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  animation: placeholder-pulse 3.5s ease-in-out infinite;
-}
-
-.hero-scene-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to left, transparent 50%, rgba(248, 250, 252, 0.6) 100%);
-  pointer-events: none;
+  min-height: 460px;
 }
 
 /* ============================================
@@ -1461,10 +1354,6 @@ img {
     grid-template-columns: 1fr 1fr;
   }
 
-  .hero-right {
-    display: none;
-  }
-
   .hero-headline {
     font-size: 34px;
   }
@@ -1613,18 +1502,9 @@ img {
     gap: 40px;
   }
 
-  .hero-right {
-    display: none;
-  }
-
   .hero-center {
+    min-height: 0;
     order: -1;
-  }
-
-  .device-stage {
-    height: 300px;
-    max-width: 320px;
-    margin: 0 auto;
   }
 
   .hero-headline {
