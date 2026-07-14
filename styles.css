@@ -798,6 +798,15 @@ img {
   z-index: 1;
 }
 
+.privacy-eyebrow {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--green);
+  margin-bottom: 12px;
+}
+
 .privacy-text {
   display: flex;
   flex-direction: column;
