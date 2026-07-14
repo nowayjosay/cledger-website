@@ -766,12 +766,22 @@ img {
   color: rgba(255, 255, 255, 0.80);
 }
 
-/* Right column — empty zone reserved for device mockups */
+/* Right column — device mockups */
 .hero-center {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   min-height: 460px;
+  padding-top: 40px;
+}
+
+.hero-mockup {
+  width: 100%;
+  max-width: 540px;
+  height: auto;
+  display: block;
+  mix-blend-mode: multiply;
+  filter: drop-shadow(0 24px 48px rgba(0, 0, 0, 0.55));
 }
 
 /* ============================================
@@ -1504,7 +1514,13 @@ img {
 
   .hero-center {
     min-height: 0;
+    padding-top: 0;
     order: -1;
+  }
+
+  .hero-mockup {
+    max-width: 340px;
+    margin: 0 auto;
   }
 
   .hero-headline {
