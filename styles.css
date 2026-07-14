@@ -701,9 +701,6 @@ img {
 
 /* Single unified card */
 .features-card {
-  background-color: var(--white);
-  border-radius: var(--radius-card);
-  box-shadow: var(--shadow-card);
   overflow: hidden;
 }
 
@@ -742,15 +739,10 @@ img {
   align-items: center;
   text-align: center;
   border-right: 1px solid var(--border);
-  transition: background-color var(--transition);
 }
 
 .feature-item:last-child {
   border-right: none;
-}
-
-.feature-item:hover {
-  background-color: rgba(16, 185, 129, 0.025);
 }
 
 .feature-item-icon {
