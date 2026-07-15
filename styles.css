@@ -606,12 +606,12 @@ img {
    ============================================ */
 .feat-daily-section {
   padding: 88px 0 96px;
-  background-color: var(--light);
+  background-color: var(--white);
   border-bottom: 1px solid var(--border);
 }
 
 .feat-daily-header {
-  margin-bottom: 56px;
+  margin-bottom: 64px;
 }
 
 .feat-daily-header .section-tag {
@@ -635,28 +635,32 @@ img {
   margin: 0 auto;
 }
 
-.feat-daily-cards {
+.feat-daily-cols {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  gap: 40px;
   max-width: 1040px;
   margin: 0 auto;
 }
 
-.feat-daily-card {
-  background-color: var(--white);
-  border-radius: var(--radius-card);
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow-card);
-  overflow: hidden;
+.feat-daily-col {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.feat-daily-col-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+  margin-bottom: 20px;
 }
 
 .feat-daily-screenshot {
-  overflow: hidden;
-  background-color: var(--secondary-bg);
-  border-bottom: 1px solid var(--border);
+  width: 100%;
+  margin-bottom: 24px;
 }
 
 .feat-daily-screenshot-img {
@@ -665,51 +669,12 @@ img {
   display: block;
 }
 
-.feat-daily-placeholder {
-  aspect-ratio: 9 / 16;
-  background-color: var(--secondary-bg);
-  border-bottom: 1px dashed var(--border-mid);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.feat-daily-placeholder::before {
-  content: '';
-  position: absolute;
-  inset: 12px;
-  border: 1.5px dashed var(--border-mid);
-  border-radius: 12px;
-  pointer-events: none;
-}
-
-.feat-daily-placeholder-label {
-  font-size: 11px;
-  font-weight: 600;
-  color: var(--text-muted);
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-.feat-daily-card-body {
-  padding: 24px 24px 28px;
-  flex: 1;
-}
-
-.feat-daily-card-title {
-  font-size: 17px;
-  font-weight: 700;
-  color: var(--text-primary);
-  letter-spacing: -0.01em;
-  margin-bottom: 8px;
-}
-
-.feat-daily-card-desc {
+.feat-daily-col-desc {
   font-size: 14px;
   color: var(--text-secondary);
-  line-height: 1.65;
+  line-height: 1.7;
   margin: 0;
+  max-width: 300px;
 }
 
 @media (max-width: 900px) {
@@ -717,9 +682,8 @@ img {
     font-size: 32px;
   }
 
-  .feat-daily-cards {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
+  .feat-daily-cols {
+    gap: 24px;
   }
 }
 
@@ -732,9 +696,10 @@ img {
     font-size: 28px;
   }
 
-  .feat-daily-cards {
+  .feat-daily-cols {
     grid-template-columns: 1fr;
-    max-width: 360px;
+    max-width: 340px;
+    gap: 56px;
   }
 }
 
