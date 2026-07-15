@@ -1140,8 +1140,8 @@ img {
    ============================================ */
 .cta-section {
   position: relative;
-  padding: 120px 0;
-  background: linear-gradient(180deg, var(--dark) 0%, var(--dark-end) 50%, var(--dark) 100%);
+  padding: 140px 0;
+  background: #020617;
   overflow: hidden;
   text-align: center;
 }
@@ -1177,7 +1177,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 28px;
 }
 
 .cta-headline {
@@ -1192,12 +1192,23 @@ img {
 .cta-sub {
   font-size: 17px;
   color: var(--text-light);
+  max-width: 560px;
+  line-height: 1.7;
+}
+
+.cta-download-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #10B981;
+  margin-bottom: -8px;
 }
 
 .cta-badges {
   display: flex;
   gap: 16px;
-  margin-top: 12px;
   flex-wrap: wrap;
   justify-content: center;
 }
