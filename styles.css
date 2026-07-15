@@ -943,171 +943,17 @@ img {
 }
 
 /* ============================================
-   HOME: SECTION 4 — GLOBAL WORK (light: #F8FAFC)
+   HOME: SECTION 4 — GLOBAL WORK
    ============================================ */
 .world-section {
-  padding: 80px 0;
-  background-color: var(--light);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-  overflow: hidden;
-}
-
-.world-section-inner {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 40px;
-  display: grid;
-  grid-template-columns: 280px 1fr 220px;
-  align-items: center;
-  gap: 0 32px;
-}
-
-/* Left column */
-.world-text-col {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.world-headline {
-  font-size: 28px;
-  font-weight: 800;
-  letter-spacing: -0.025em;
-  color: var(--text-primary);
-  line-height: 1.2;
-}
-
-.world-accent {
-  color: var(--green);
-}
-
-.world-rule {
   display: block;
-  width: 48px;
-  height: 3px;
-  border-radius: 2px;
-  background-color: var(--green);
-}
-
-.world-sub {
-  font-size: 14px;
-  color: var(--text-secondary);
-  line-height: 1.65;
-}
-
-/* Center: map */
-.world-map-col {
-  min-width: 0;
-}
-
-#cledger-world-map {
-  width: 100%;
   line-height: 0;
 }
 
-#cledger-world-map svg {
+.world-full-image {
   width: 100%;
   height: auto;
   display: block;
-}
-
-/* Flag pin */
-.wpin-circle {
-  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.14));
-}
-
-/* Right column: stats card */
-.world-stats-col {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.world-stats-card {
-  background: var(--white);
-  border: 1.5px solid var(--border);
-  border-radius: var(--radius-card);
-  padding: 20px 22px;
-  box-shadow: var(--shadow-card);
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  width: 200px;
-}
-
-.world-stat {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.world-stat-icon {
-  width: 36px;
-  height: 36px;
-  border-radius: 10px;
-  background: rgba(16, 185, 129, 0.08);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.world-stat-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.2;
-}
-
-.world-stat-num {
-  font-size: 18px;
-  font-weight: 800;
-  color: var(--text-primary);
-  letter-spacing: -0.02em;
-}
-
-.world-stat-label {
-  font-size: 12px;
-  color: var(--text-secondary);
-  font-weight: 500;
-}
-
-/* Responsive */
-@media (max-width: 1024px) {
-  .world-section-inner {
-    grid-template-columns: 1fr;
-    gap: 32px;
-    text-align: center;
-  }
-
-  .world-text-col {
-    align-items: center;
-  }
-
-  .world-stats-col {
-    justify-content: center;
-  }
-
-  .world-stats-card {
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
-    gap: 12px 24px;
-  }
-}
-
-@media (max-width: 640px) {
-  .world-section {
-    padding: 56px 0;
-  }
-
-  .world-section-inner {
-    padding: 0 20px;
-  }
-
-  .world-headline {
-    font-size: 22px;
-  }
 }
 
 /* ============================================
