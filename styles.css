@@ -602,6 +602,131 @@ img {
 }
 
 /* ============================================
+   FEATURES PAGE — SECTION 2: DAILY LOGS
+   ============================================ */
+.feat-daily-section {
+  padding: 88px 0 96px;
+  background-color: var(--light);
+  border-bottom: 1px solid var(--border);
+}
+
+.feat-daily-header {
+  margin-bottom: 56px;
+}
+
+.feat-daily-header .section-tag {
+  margin-bottom: 20px;
+}
+
+.feat-daily-heading {
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+  margin: 0 0 16px;
+}
+
+.feat-daily-subtitle {
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.feat-daily-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.feat-daily-card {
+  background-color: var(--white);
+  border-radius: var(--radius-card);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.feat-daily-placeholder {
+  aspect-ratio: 9 / 16;
+  background-color: var(--secondary-bg);
+  border-bottom: 1px dashed var(--border-mid);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.feat-daily-placeholder::before {
+  content: '';
+  position: absolute;
+  inset: 12px;
+  border: 1.5px dashed var(--border-mid);
+  border-radius: 12px;
+  pointer-events: none;
+}
+
+.feat-daily-placeholder-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.feat-daily-card-body {
+  padding: 24px 24px 28px;
+  flex: 1;
+}
+
+.feat-daily-card-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+  margin-bottom: 8px;
+}
+
+.feat-daily-card-desc {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .feat-daily-heading {
+    font-size: 32px;
+  }
+
+  .feat-daily-cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+}
+
+@media (max-width: 700px) {
+  .feat-daily-section {
+    padding: 64px 0 72px;
+  }
+
+  .feat-daily-heading {
+    font-size: 28px;
+  }
+
+  .feat-daily-cards {
+    grid-template-columns: 1fr;
+    max-width: 360px;
+  }
+}
+
+/* ============================================
    PAGE HERO (inner pages — on white bg)
    ============================================ */
 .page-hero {
