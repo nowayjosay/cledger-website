@@ -653,6 +653,18 @@ img {
   flex-direction: column;
 }
 
+.feat-daily-screenshot {
+  overflow: hidden;
+  background-color: var(--secondary-bg);
+  border-bottom: 1px solid var(--border);
+}
+
+.feat-daily-screenshot-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .feat-daily-placeholder {
   aspect-ratio: 9 / 16;
   background-color: var(--secondary-bg);
