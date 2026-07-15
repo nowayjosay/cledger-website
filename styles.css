@@ -642,13 +642,13 @@ img {
 }
 
 .store-badge--lg {
-  height: 58px;
-  width: auto;
+  width: 160px;
+  height: auto;
 }
 
 .store-badge--sm {
-  height: 38px;
-  width: auto;
+  width: 110px;
+  height: auto;
 }
 
 /* ============================================
