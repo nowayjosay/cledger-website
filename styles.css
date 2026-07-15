@@ -646,6 +646,10 @@ img {
   height: auto;
 }
 
+.store-badge--google.store-badge--lg {
+  width: 185px;
+}
+
 .store-badge--sm {
   width: 110px;
   height: auto;
