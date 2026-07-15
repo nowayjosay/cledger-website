@@ -543,6 +543,16 @@ img {
   min-width: 0;
 }
 
+.feat-icon-row--compact {
+  justify-content: center;
+  gap: 0;
+}
+
+.feat-icon-row--compact .feat-pill {
+  flex: 0 0 auto;
+  padding: 18px 28px;
+}
+
 .feat-pill-icon {
   display: flex;
   align-items: center;
