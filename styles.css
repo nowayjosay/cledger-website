@@ -146,11 +146,6 @@ img {
   width: auto;
 }
 
-/* Footer logo — slightly smaller */
-.footer-brand .nav-logo-img {
-  height: 32px;
-}
-
 .nav-links {
   display: flex;
   align-items: center;
