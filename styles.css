@@ -2109,8 +2109,9 @@ img {
 
 /* Images */
 .audience-img {
-  width: 240px;
-  height: auto;
+  width: 360px;
+  height: 240px;
+  object-fit: cover;
   border-radius: 20px;
   display: block;
   flex-shrink: 0;
@@ -2147,6 +2148,11 @@ img {
   .audience-strip {
     justify-content: flex-start;
     padding: 8px 20px;
+  }
+
+  .audience-img {
+    width: 280px;
+    height: 187px;
   }
 
   .audience-closing {
