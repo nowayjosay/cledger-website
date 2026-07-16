@@ -139,20 +139,16 @@ img {
   margin-right: 48px;
 }
 
-.logo-placeholder {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 38px;
-  padding: 0 14px;
-  background-color: rgba(255, 255, 255, 0.06);
-  border: 1px dashed var(--dark-border);
-  border-radius: var(--radius-sm);
-  color: var(--text-light);
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  white-space: nowrap;
+/* Nav bar logo */
+.nav-logo-img {
+  display: block;
+  height: 36px;
+  width: auto;
+}
+
+/* Footer logo — slightly smaller */
+.footer-brand .nav-logo-img {
+  height: 32px;
 }
 
 .nav-links {
