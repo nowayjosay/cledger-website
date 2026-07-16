@@ -2546,3 +2546,145 @@ img {
     padding: 0 16px;
   }
 }
+
+/* ============================================
+   PRIVACY PAGE — SECTION 4: POLICY ACCORDION
+   ============================================ */
+.priv-policy-section {
+  padding: 96px 24px 104px;
+  background-color: var(--white);
+}
+
+.priv-policy-inner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.priv-policy-heading {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.025em;
+  margin: 0 0 40px;
+}
+
+/* Accordion wrapper */
+.priv-accordion {
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Toggle button */
+.priv-accordion-toggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+  transition: background-color 0.18s ease;
+}
+
+.priv-accordion-toggle:hover {
+  background-color: #F8FAFC;
+}
+
+.priv-accordion-icon {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1.5px solid #CBD5E1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  transition: border-color 0.18s ease, color 0.18s ease;
+}
+
+.priv-accordion-toggle:hover .priv-accordion-icon,
+.priv-accordion.is-open .priv-accordion-icon {
+  border-color: var(--green);
+  color: var(--green);
+}
+
+/* Show/hide icons */
+.priv-icon-minus { display: none; }
+.priv-accordion.is-open .priv-icon-plus  { display: none; }
+.priv-accordion.is-open .priv-icon-minus { display: block; }
+
+/* Panel */
+.priv-accordion-panel {
+  border-top: 1px solid #E2E8F0;
+}
+
+.priv-policy-body {
+  padding: 32px 24px 40px;
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.75;
+}
+
+/* Placeholder text */
+.priv-policy-placeholder {
+  color: #94A3B8;
+  font-style: italic;
+  text-align: center;
+  padding: 48px 0;
+  margin: 0;
+}
+
+/* Styles ready for final policy text */
+.priv-policy-body h3 {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 32px 0 12px;
+  letter-spacing: -0.01em;
+}
+
+.priv-policy-body h3:first-child { margin-top: 0; }
+
+.priv-policy-body p { margin: 0 0 16px; }
+.priv-policy-body p:last-child { margin-bottom: 0; }
+
+.priv-policy-body ul,
+.priv-policy-body ol {
+  padding-left: 20px;
+  margin: 0 0 16px;
+}
+
+.priv-policy-body li { margin-bottom: 8px; }
+
+.priv-policy-body .effective-date {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 28px;
+}
+
+@media (max-width: 600px) {
+  .priv-policy-section {
+    padding: 64px 24px 72px;
+  }
+
+  .priv-policy-heading {
+    font-size: 26px;
+  }
+
+  .priv-accordion-toggle {
+    padding: 16px 20px;
+  }
+
+  .priv-policy-body {
+    padding: 24px 20px 32px;
+  }
+}

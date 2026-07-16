@@ -60,4 +60,24 @@
     card.style.transitionDelay = (i * 80) + 'ms';
   });
 
+  /* ── Privacy policy accordion ── */
+  var privBtn = document.getElementById('privAccordionBtn');
+  var privPanel = document.getElementById('privAccordionPanel');
+
+  if (privBtn && privPanel) {
+    privBtn.addEventListener('click', function () {
+      var expanded = privBtn.getAttribute('aria-expanded') === 'true';
+      privBtn.setAttribute('aria-expanded', !expanded ? 'true' : 'false');
+      privBtn.querySelector('.priv-accordion-label').textContent = expanded
+        ? 'View Full Privacy Policy'
+        : 'Hide Full Privacy Policy';
+      if (expanded) {
+        privPanel.hidden = true;
+      } else {
+        privPanel.hidden = false;
+      }
+      privBtn.closest('.priv-accordion').classList.toggle('is-open', !expanded);
+    });
+  }
+
 })();
