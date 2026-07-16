@@ -2688,3 +2688,28 @@ img {
     padding: 24px 20px 32px;
   }
 }
+
+/* Policy body sub-headings, links and copyright */
+.priv-policy-body h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 24px 0 8px;
+  letter-spacing: 0.01em;
+}
+
+.priv-policy-body a {
+  color: var(--green);
+  text-decoration: none;
+  transition: opacity 0.18s ease;
+}
+
+.priv-policy-body a:hover {
+  opacity: 0.75;
+}
+
+.priv-policy-copyright {
+  margin-top: 40px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
