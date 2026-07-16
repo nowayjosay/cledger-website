@@ -823,6 +823,139 @@ img {
 }
 
 /* ============================================
+   FEATURES PAGE — SECTION 6: BACKUP & RESTORE
+   ============================================ */
+.feat-backup-section {
+  padding: 120px 0 140px;
+  background-color: var(--dark);
+}
+
+.feat-backup-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 80px;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.feat-backup-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.feat-backup-heading {
+  font-size: 38px;
+  font-weight: 800;
+  color: #FFFFFF;
+  letter-spacing: -0.025em;
+  line-height: 1.18;
+  margin: 0 0 20px;
+}
+
+.feat-backup-accent {
+  color: var(--green);
+}
+
+.feat-backup-subtitle {
+  font-size: 16px;
+  color: #94A3B8;
+  line-height: 1.7;
+  margin: 0 0 40px;
+}
+
+.feat-backup-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feat-backup-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.feat-backup-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.feat-backup-icon--green  { background-color: rgba(16, 185, 129, 0.15); color: #10B981; }
+.feat-backup-icon--blue   { background-color: rgba(37, 99, 235,  0.18); color: #60A5FA; }
+.feat-backup-icon--amber  { background-color: rgba(245, 158, 11, 0.15); color: #FBBF24; }
+.feat-backup-icon--teal   { background-color: rgba(20, 184, 166, 0.15); color: #2DD4BF; }
+
+.feat-backup-item-title {
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+  color: #F1F5F9;
+  margin-bottom: 3px;
+}
+
+.feat-backup-item-desc {
+  display: block;
+  font-size: 14px;
+  color: #64748B;
+  line-height: 1.6;
+}
+
+.feat-backup-visual {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: end;
+}
+
+.feat-backup-shot {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+  display: block;
+  box-shadow: 0px 24px 60px rgba(0, 0, 0, 0.35);
+}
+
+@media (max-width: 900px) {
+  .feat-backup-heading {
+    font-size: 30px;
+  }
+
+  .feat-backup-grid {
+    gap: 56px;
+  }
+}
+
+@media (max-width: 700px) {
+  .feat-backup-section {
+    padding: 80px 0 100px;
+  }
+
+  .feat-backup-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .feat-backup-heading {
+    font-size: 26px;
+  }
+
+  .feat-backup-visual {
+    gap: 14px;
+  }
+}
+
+/* ============================================
    FEATURES PAGE — SECTION 5: PDF REPORTS
    ============================================ */
 .feat-reports-section {
