@@ -777,17 +777,12 @@ img {
   justify-content: center;
 }
 
-.feat-targets-phone-placeholder {
+.feat-targets-screenshot-img {
   width: 100%;
   max-width: 300px;
-  aspect-ratio: 9 / 19.5;
-  background-color: var(--secondary-bg);
-  border: 1.5px dashed var(--border-mid);
+  height: auto;
   border-radius: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: placeholder-pulse 2.8s ease-in-out infinite;
+  display: block;
 }
 
 @media (max-width: 900px) {
@@ -822,7 +817,7 @@ img {
     order: -1;
   }
 
-  .feat-targets-phone-placeholder {
+  .feat-targets-screenshot-img {
     max-width: 220px;
   }
 }
