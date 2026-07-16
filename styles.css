@@ -248,7 +248,7 @@ img {
 }
 
 .footer-top--four {
-  grid-template-columns: 1.6fr 1fr 1fr;
+  grid-template-columns: 1.4fr 1.2fr 1fr 1fr;
 }
 
 .footer-col h3 {
@@ -290,6 +290,11 @@ img {
 
 .social-link:hover {
   color: var(--green);
+}
+
+.footer-logo-img {
+  height: 48px;
+  width: auto;
 }
 
 .footer-tagline {
@@ -2269,7 +2274,8 @@ img {
     grid-template-columns: 1fr 1fr;
   }
 
-  .footer-col.footer-brand {
+  .footer-col.footer-brand,
+  .footer-col.footer-store {
     grid-column: 1 / -1;
   }
 
@@ -2406,7 +2412,8 @@ img {
     gap: 28px;
   }
 
-  .footer-col.footer-brand {
+  .footer-col.footer-brand,
+  .footer-col.footer-store {
     grid-column: auto;
   }
 
