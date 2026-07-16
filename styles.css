@@ -1679,7 +1679,8 @@ img {
 }
 
 .store-badge--google.store-badge--sm {
-  width: 125px;
+  width: 132px;
+  margin-left: -8px;
 }
 
 /* ============================================
