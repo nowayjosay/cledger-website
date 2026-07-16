@@ -2011,7 +2011,7 @@ img {
    HOME: SECTION 5 — AUDIENCE (dark: #020617)
    ============================================ */
 .audience-section {
-  padding: 120px 0;
+  padding: 140px 0;
   background-color: #020617;
   text-align: center;
 }
@@ -2109,17 +2109,11 @@ img {
 
 /* Images */
 .audience-img {
-  width: 260px;
+  width: 240px;
   height: auto;
   border-radius: 20px;
   display: block;
   flex-shrink: 0;
-}
-
-.audience-card .placeholder-label {
-  font-size: 13px;
-  color: rgba(255, 255, 255, 0.35);
-  font-weight: 500;
 }
 
 /* Closing sentence */
@@ -2133,7 +2127,7 @@ img {
 
 @media (max-width: 640px) {
   .audience-section {
-    padding: 80px 0;
+    padding: 96px 0;
   }
 
   .audience-inner {
