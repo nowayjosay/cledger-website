@@ -1230,6 +1230,55 @@ img {
   border-bottom: 1px solid var(--border);
 }
 
+/* Two-column variant used on the Privacy page */
+.page-hero--split .container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.page-hero-split-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 64px;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.page-hero-split-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-hero-split-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.privacy-hero-svg {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0px 16px 48px rgba(16, 185, 129, 0.08));
+}
+
+@media (max-width: 860px) {
+  .page-hero-split-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .page-hero-split-visual {
+    order: -1;
+  }
+
+  .privacy-hero-svg {
+    max-width: 360px;
+  }
+}
+
 .page-hero-tag {
   display: inline-block;
   font-size: 11px;
