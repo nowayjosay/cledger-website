@@ -2087,7 +2087,8 @@ img {
 
 /* Scroll strip */
 .audience-scroll-wrap {
-  width: 100%;
+  width: calc(100% + 80px);
+  margin-left: -40px;
   overflow-x: auto;
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -2101,9 +2102,9 @@ img {
   display: flex;
   flex-direction: row;
   gap: 32px;
-  justify-content: center;
+  justify-content: flex-start;
   min-width: max-content;
-  padding: 8px 0;
+  padding: 8px 40px;
 }
 
 /* Images */
@@ -2142,6 +2143,11 @@ img {
 
   .audience-tag {
     font-size: 24px;
+  }
+
+  .audience-scroll-wrap {
+    width: calc(100% + 40px);
+    margin-left: -20px;
   }
 
   .audience-strip {
