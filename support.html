@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Cledger Support — coming soon.">
+  <meta name="description" content="Cledger Support — FAQ and contact information.">
   <title>Support — Cledger</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -31,95 +31,191 @@
 
   <main>
 
-    <!-- Page Hero -->
-    <header class="page-hero">
-      <div class="container">
-        <span class="page-hero-tag">Support</span>
-        <h1 class="page-hero-title">Support Center</h1>
-        <p class="page-hero-subtitle">Find answers, get help, and connect with the Cledger team.</p>
-      </div>
-    </header>
-
-    <!-- Support Hero Placeholder -->
-    <section class="section">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Help</span>
-          <h2 class="section-title">Support Hero</h2>
-          <p class="section-subtitle">Opening banner with search and quick-help options.</p>
-        </div>
-        <div class="placeholder-box placeholder-large">
-          <span class="placeholder-label">Support Hero Placeholder</span>
-        </div>
+    <!-- ================================================
+         SECTION 1 — HERO
+         ================================================ -->
+    <section class="sup-hero">
+      <div class="sup-hero-inner">
+        <h1 class="sup-hero-title">Need help?</h1>
+        <p class="sup-hero-subtitle">Need assistance with Cledger? We're only an email away.</p>
       </div>
     </section>
 
-    <hr class="section-divider">
+    <!-- ================================================
+         SECTION 2 — FREQUENTLY ASKED QUESTIONS
+         ================================================ -->
+    <section class="sup-faq">
+      <div class="sup-faq-inner">
 
-    <!-- FAQ -->
-    <section class="section">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">FAQ</span>
-          <h2 class="section-title">Frequently Asked Questions</h2>
-          <p class="section-subtitle">Answers to the most common questions about Cledger.</p>
-        </div>
-        <div class="placeholder-box placeholder-large">
-          <span class="placeholder-label">FAQ Accordion</span>
-        </div>
-      </div>
-    </section>
+        <h2 class="sup-faq-heading">Frequently Asked Questions</h2>
 
-    <hr class="section-divider">
+        <div class="sup-faq-list" id="supFaqList">
 
-    <!-- Contact -->
-    <section class="section">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag section-tag-green">Contact</span>
-          <h2 class="section-title">Contact</h2>
-          <p class="section-subtitle">Email, social, and other ways to reach the team.</p>
-        </div>
-        <div class="placeholder-box placeholder-medium">
-          <span class="placeholder-label">Contact Options</span>
-        </div>
-      </div>
-    </section>
-
-    <hr class="section-divider">
-
-    <!-- Support Form -->
-    <section class="section">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Submit a Request</span>
-          <h2 class="section-title">Support Form</h2>
-          <p class="section-subtitle">Send a message directly to the support team.</p>
-        </div>
-        <div class="placeholder-box placeholder-form">
-          <span class="placeholder-label">Support Request Form</span>
-        </div>
-      </div>
-    </section>
-
-    <hr class="section-divider">
-
-    <!-- Troubleshooting -->
-    <section class="section">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Guides</span>
-          <h2 class="section-title">Troubleshooting</h2>
-          <p class="section-subtitle">Step-by-step guides for common issues and fixes.</p>
-        </div>
-        <div class="grid-2">
-          <div class="placeholder-box placeholder-medium">
-            <span class="placeholder-label">Troubleshooting Guide 1</span>
+          <!-- 1 -->
+          <div class="sup-faq-item">
+            <button
+              class="sup-faq-btn"
+              aria-expanded="false"
+              aria-controls="faq-panel-1"
+              id="faq-btn-1"
+            >
+              <span>Is Cledger free?</span>
+              <span class="sup-faq-icon" aria-hidden="true">
+                <svg class="sup-icon-plus"  width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                <svg class="sup-icon-minus" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </span>
+            </button>
+            <div class="sup-faq-panel" id="faq-panel-1" role="region" aria-labelledby="faq-btn-1" hidden>
+              <p>No. Cledger is a one-time purchase with no subscriptions.</p>
+            </div>
           </div>
-          <div class="placeholder-box placeholder-medium">
-            <span class="placeholder-label">Troubleshooting Guide 2</span>
+
+          <!-- 2 -->
+          <div class="sup-faq-item">
+            <button
+              class="sup-faq-btn"
+              aria-expanded="false"
+              aria-controls="faq-panel-2"
+              id="faq-btn-2"
+            >
+              <span>Does Cledger require an account?</span>
+              <span class="sup-faq-icon" aria-hidden="true">
+                <svg class="sup-icon-plus"  width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                <svg class="sup-icon-minus" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </span>
+            </button>
+            <div class="sup-faq-panel" id="faq-panel-2" role="region" aria-labelledby="faq-btn-2" hidden>
+              <p>No. There are no accounts, registrations or logins.</p>
+            </div>
           </div>
-        </div>
+
+          <!-- 3 -->
+          <div class="sup-faq-item">
+            <button
+              class="sup-faq-btn"
+              aria-expanded="false"
+              aria-controls="faq-panel-3"
+              id="faq-btn-3"
+            >
+              <span>Is my data stored online?</span>
+              <span class="sup-faq-icon" aria-hidden="true">
+                <svg class="sup-icon-plus"  width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                <svg class="sup-icon-minus" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </span>
+            </button>
+            <div class="sup-faq-panel" id="faq-panel-3" role="region" aria-labelledby="faq-btn-3" hidden>
+              <p>No. Everything stays on your device.</p>
+            </div>
+          </div>
+
+          <!-- 4 -->
+          <div class="sup-faq-item">
+            <button
+              class="sup-faq-btn"
+              aria-expanded="false"
+              aria-controls="faq-panel-4"
+              id="faq-btn-4"
+            >
+              <span>Can I move my data to another phone or tablet?</span>
+              <span class="sup-faq-icon" aria-hidden="true">
+                <svg class="sup-icon-plus"  width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                <svg class="sup-icon-minus" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </span>
+            </button>
+            <div class="sup-faq-panel" id="faq-panel-4" role="region" aria-labelledby="faq-btn-4" hidden>
+              <p>Yes. You can create a backup file and restore it on another device.</p>
+            </div>
+          </div>
+
+          <!-- 5 -->
+          <div class="sup-faq-item">
+            <button
+              class="sup-faq-btn"
+              aria-expanded="false"
+              aria-controls="faq-panel-5"
+              id="faq-btn-5"
+            >
+              <span>Can I export my records?</span>
+              <span class="sup-faq-icon" aria-hidden="true">
+                <svg class="sup-icon-plus"  width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                <svg class="sup-icon-minus" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </span>
+            </button>
+            <div class="sup-faq-panel" id="faq-panel-5" role="region" aria-labelledby="faq-btn-5" hidden>
+              <p>Yes. Cledger can generate printable PDF reports and backup files.</p>
+            </div>
+          </div>
+
+          <!-- 6 -->
+          <div class="sup-faq-item">
+            <button
+              class="sup-faq-btn"
+              aria-expanded="false"
+              aria-controls="faq-panel-6"
+              id="faq-btn-6"
+            >
+              <span>Does Cledger work without internet?</span>
+              <span class="sup-faq-icon" aria-hidden="true">
+                <svg class="sup-icon-plus"  width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                <svg class="sup-icon-minus" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </span>
+            </button>
+            <div class="sup-faq-panel" id="faq-panel-6" role="region" aria-labelledby="faq-btn-6" hidden>
+              <p>Yes. Cledger works fully offline.</p>
+            </div>
+          </div>
+
+          <!-- 7 -->
+          <div class="sup-faq-item">
+            <button
+              class="sup-faq-btn"
+              aria-expanded="false"
+              aria-controls="faq-panel-7"
+              id="faq-btn-7"
+            >
+              <span>Is my information private?</span>
+              <span class="sup-faq-icon" aria-hidden="true">
+                <svg class="sup-icon-plus"  width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                <svg class="sup-icon-minus" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </span>
+            </button>
+            <div class="sup-faq-panel" id="faq-panel-7" role="region" aria-labelledby="faq-btn-7" hidden>
+              <p>Yes. Cledger was built with privacy first and does not track, collect or sell your data.</p>
+            </div>
+          </div>
+
+          <!-- 8 -->
+          <div class="sup-faq-item">
+            <button
+              class="sup-faq-btn"
+              aria-expanded="false"
+              aria-controls="faq-panel-8"
+              id="faq-btn-8"
+            >
+              <span>Will there be future updates?</span>
+              <span class="sup-faq-icon" aria-hidden="true">
+                <svg class="sup-icon-plus"  width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                <svg class="sup-icon-minus" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </span>
+            </button>
+            <div class="sup-faq-panel" id="faq-panel-8" role="region" aria-labelledby="faq-btn-8" hidden>
+              <p>Yes. Cledger will continue to evolve while remaining simple, private and focused on rotational professionals.</p>
+            </div>
+          </div>
+
+        </div><!-- /.sup-faq-list -->
+      </div><!-- /.sup-faq-inner -->
+    </section>
+
+    <!-- ================================================
+         SECTION 3 — CONTACT US
+         ================================================ -->
+    <section class="sup-contact">
+      <div class="sup-contact-inner">
+        <h2 class="sup-contact-title">Contact us</h2>
+        <p class="sup-contact-text">Need help, found a bug or have an idea for a future feature? We'd love to hear from you.</p>
+        <a href="mailto:support@cledgerapp.com" class="sup-contact-email">support@cledgerapp.com</a>
+        <p class="sup-contact-response">Typical response time: 24–48 hours.</p>
       </div>
     </section>
 

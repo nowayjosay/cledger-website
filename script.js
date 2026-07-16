@@ -60,6 +60,32 @@
     card.style.transitionDelay = (i * 80) + 'ms';
   });
 
+  /* ── Support page FAQ accordion (one open at a time) ── */
+  var faqList = document.getElementById('supFaqList');
+
+  if (faqList) {
+    faqList.addEventListener('click', function (e) {
+      var btn = e.target.closest('.sup-faq-btn');
+      if (!btn) return;
+
+      var panelId = btn.getAttribute('aria-controls');
+      var panel   = document.getElementById(panelId);
+      var isOpen  = btn.getAttribute('aria-expanded') === 'true';
+
+      /* Close every other open item first */
+      faqList.querySelectorAll('.sup-faq-btn[aria-expanded="true"]').forEach(function (openBtn) {
+        if (openBtn !== btn) {
+          openBtn.setAttribute('aria-expanded', 'false');
+          document.getElementById(openBtn.getAttribute('aria-controls')).hidden = true;
+        }
+      });
+
+      /* Toggle the clicked item */
+      btn.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      panel.hidden = isOpen;
+    });
+  }
+
   /* ── Privacy policy accordion ── */
   var privBtn = document.getElementById('privAccordionBtn');
   var privPanel = document.getElementById('privAccordionPanel');
