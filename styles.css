@@ -634,8 +634,8 @@ img {
 .feat-daily-cols {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-  max-width: 1040px;
+  gap: 48px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -670,7 +670,6 @@ img {
   color: var(--text-secondary);
   line-height: 1.7;
   margin: 0;
-  max-width: 300px;
 }
 
 @media (max-width: 900px) {
